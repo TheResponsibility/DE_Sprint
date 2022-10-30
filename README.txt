@@ -10,3 +10,8 @@ Viva el Docker, viva el Prometheus!
 Образование высшее, магистр-колдун ордена Финансов и Кредита.
 Направление - "Управление корпоративными финансами".
 Доп.образование - DS-ер.
+
+
+commit edcfe8f8ba684ade97f0b83a56249c88dea2d02e (HEAD -> develop)
+Author: TheResponsibility <poloshkov@rambler.ru>
+Date:   Sun Oct 30 16:21:31 2022 +0700
