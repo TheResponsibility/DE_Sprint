@@ -1,0 +1,16 @@
+pwd
+ls -lth
+cd Downloads | ls -lth
+hdfs dfs -lth
+hdfs dfs -copyFromLocal  /home/cloudera/Downloads/voina-i-mir-tom-1.txt
+hdfs dfs -copyFromLocal  /home/cloudera/Downloads/voina-i-mir-tom-2.txt
+hdfs dfs -copyFromLocal  /home/cloudera/Downloads/voina-i-mir-tom-3.txt
+hdfs dfs -copyFromLocal  /home/cloudera/Downloads/voina-i-mir-tom-4.txt
+hdfs dfs -lth
+hdfs dfs -getmerge /user/cloudera  /home/cloudera/Downloads/merge.txt
+hadoop archive -archiveName book.har -p /ls user/cloudera user/cloudera
+hdfs dfs -copyFromLocal  /home/cloudera/Downloads/merge.txt
+hdfs dfs -chmod 777 merge.txt
+hdfs dfs -du /user/cloudera/merge.txt 
+hdfs dfs -setrep -w 2 /user/cloudera/merge.txt
+hadoop fs -cat user/cloudera/merge.txt | wc -l
